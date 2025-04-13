@@ -31,7 +31,7 @@ const libros = [
   
 
   // ========
-// PASO 2 
+// PASO 2 - Función para agregar un libro nuevo al array 'libros'
 // ========
 
 // 1. 
@@ -72,7 +72,7 @@ function agregarLibro(id, titulo, autor, anio, genero) {
     console.log(`📚 Libros ordenados por ${criterio}:`, librosOrdenados);
   }
   
-  // 4.
+// PASO 4 - Esta función busca el libro y el usuario por ID, y marca el libro como no disponible
   function borrarLibro(id) {
     const index = libros.findIndex(libro => libro.id === id);
     if (index !== -1) {
